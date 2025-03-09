@@ -5,13 +5,13 @@
 class CursorRules < Formula
   desc "CLI tool to help initialize and manage Cursor Editor rules for your projects"
   homepage "https://github.com/fireharp/cursor-rules"
-  version "0.1.3-SNAPSHOT-8915dc0"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.3/cursor-rules_Darwin_x86_64.tar.gz"
-      sha256 "4c137564fe6948f9b1a36cdddfd142334eac9862cbecbae00731f1a291a113ce"
+      sha256 "2f5fc16aef1ca82b2e825a2bb772864a891ff3135d4dec796fb9706649819ae0"
 
       def install
         bin.install "cursor-rules"
@@ -19,7 +19,7 @@ class CursorRules < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.3/cursor-rules_Darwin_arm64.tar.gz"
-      sha256 "1bd478ecab9f1553965853d78db79b5b1c41ba37368bc1bf27c8ed7671f1e23e"
+      sha256 "153975547a6e38a7514b1d37454ba2db030b22b7213fc83f8d23d8c8b500bcb6"
 
       def install
         bin.install "cursor-rules"
@@ -31,7 +31,7 @@ class CursorRules < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.3/cursor-rules_Linux_x86_64.tar.gz"
-        sha256 "7391a59dac5af6a373626d1d31a06debba5bbbe0c4a4b6ed00aaaed6f9327787"
+        sha256 "b0d3e74d67361dbbe6e56fd9af3abc042d971881fd7a0a98906f34b3cc22f123"
 
         def install
           bin.install "cursor-rules"
@@ -41,7 +41,7 @@ class CursorRules < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.3/cursor-rules_Linux_arm64.tar.gz"
-        sha256 "46b8da404659ea0699e9c62efeac166500c3fc31cea3a47645a4e838cfa9358a"
+        sha256 "b619e25425918f9f16d488cba18b9d7c039b7cc0dde25b9b55a98f254030a593"
 
         def install
           bin.install "cursor-rules"
