@@ -5,21 +5,21 @@
 class CursorRules < Formula
   desc "CLI tool to help initialize and manage Cursor Editor rules for your projects"
   homepage "https://github.com/fireharp/cursor-rules"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.5/cursor-rules_Darwin_x86_64.tar.gz"
-      sha256 "fb531b06d0c3ff1443d30136f2f59f634e562dc5ed9e0a8fbd86e6d58bb93d94"
+      url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.6/cursor-rules_Darwin_x86_64.tar.gz"
+      sha256 "f91dfd006f61201f3f9972d7fced89527fdaae5acca13b99aaf22d999f6e0c17"
 
       def install
         bin.install "cursor-rules"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.5/cursor-rules_Darwin_arm64.tar.gz"
-      sha256 "3ffb4d1164e64a422e41d272939cd9ade161f51477208d6ed27e0164428e27bf"
+      url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.6/cursor-rules_Darwin_arm64.tar.gz"
+      sha256 "ea9a942ef61e81df282295c1d290d91462e344f3d0a5bd654fdbc851c876abb9"
 
       def install
         bin.install "cursor-rules"
@@ -30,8 +30,8 @@ class CursorRules < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.5/cursor-rules_Linux_x86_64.tar.gz"
-        sha256 "e9fed928bb6f46e21e1c5861dcd0c631ae3db988239dcc4feb03465bae5d96df"
+        url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.6/cursor-rules_Linux_x86_64.tar.gz"
+        sha256 "7d6d046df6a20211c1478bc93887312a3803832b8518ceadaaec76bb0adad053"
 
         def install
           bin.install "cursor-rules"
@@ -40,8 +40,8 @@ class CursorRules < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.5/cursor-rules_Linux_arm64.tar.gz"
-        sha256 "8a0b8e1bdffdfdcf38e51ee1b859d7c0718f87d21a6dbb3aead295818c36f669"
+        url "https://github.com/fireharp/cursor-rules/releases/download/v0.1.6/cursor-rules_Linux_arm64.tar.gz"
+        sha256 "ac1653f918aa3cd8b0c9ff2bff36dc3b644668e5319d8ac09413949c5a71d4e1"
 
         def install
           bin.install "cursor-rules"
